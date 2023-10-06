@@ -2,7 +2,7 @@ export function validateForm(data) {
   const errors = {};
 
   if (!data.email) {
-    errors.email = 'El email es requerido';
+    errors.email = 'Campo obligatorio';
   } else if (!/\S+@\S+\.\S+/.test(data.email)) {
     errors.email = 'El email no es válido';
   } else if (data.email.length > 35) {
@@ -10,7 +10,7 @@ export function validateForm(data) {
   }
 
   if (!data.password) {
-    errors.password = 'La contraseña es requerida';
+    errors.password = 'Campo obligatorio';
   } else if (!/\d/.test(data.password)) {
     errors.password = 'La contraseña debe contener al menos un número';
   } else if (data.password.length < 6 || data.password.length > 10) {

@@ -31,11 +31,12 @@ const Form = (props) => {
   return (
     <div className={styles["page-container"]}>
     <div className={styles["form-container"]}>
+      <div className={styles["greeting-container"]}>
+        <p className={styles["greeting-text"]}>¡Hola otra vez! 👾</p>
+      </div>
+      <p className={styles["sub-greeting-text"]}>Continuá tu experiencia en Playing Morty</p>
       <form onSubmit={handleSubmit}>
         <div className={styles["input-container"]}>
-          <label className={styles.label} htmlFor="email">
-            Email:
-          </label>
           <input
             className={styles.input}
             name="email"
@@ -47,9 +48,6 @@ const Form = (props) => {
           {errors.email && <p className={styles["error-message"]}>{errors.email}</p>}
         </div>
         <div className={styles["input-container"]}>
-          <label className={styles.label} htmlFor="password">
-            Password:
-          </label>
           <input
             className={styles.input}
             name="password"
