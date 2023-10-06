@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.custom-search-bar {
+  background-color: blue;
+  color: white;
+}
+
+.custom-cards {
+  background-color: red;
+  border: 2px solid black;
+}
