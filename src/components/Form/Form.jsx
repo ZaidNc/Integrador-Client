@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { validateForm } from "./validation";
 import styles from "./Form.module.css";
+import greetingImage from "./img/Logo Rick.png";
 
 const Form = (props) => {
   const { login } = props;
@@ -30,12 +31,13 @@ const Form = (props) => {
 
   return (
     <div className={styles["page-container"]}>
-    <div className={styles["form-container"]}>
-      <div className={styles["greeting-container"]}>
-        <p className={styles["greeting-text"]}>¡Hola otra vez! 👾</p>
-      </div>
-      <p className={styles["sub-greeting-text"]}>Continuá tu experiencia en Playing Morty</p>
-      <form onSubmit={handleSubmit}>
+      <div className={styles["form-container"]}>
+        <div className={styles["greeting-container"]}>
+          <img src={greetingImage} alt="Saludo" className={styles["greeting-image"]} />
+          <p className={styles["greeting-text"]}>¡Hola otra vez! 👾</p>
+        </div>
+        <p className={styles["sub-greeting-text"]}>Continuá tu experiencia en Playing Morty</p>
+        <form onSubmit={handleSubmit}>
         <div className={styles["input-container"]}>
           <input
             className={styles.input}
