@@ -12,3 +12,11 @@
   background-color: red;
   border: 2px solid black;
 }
+
+body {
+  background-image: url('./img/FondoV1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
